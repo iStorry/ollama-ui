@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .avatar {
+    @apply flex h-8 w-8 items-center justify-center rounded-full bg-gray-300 font-mono font-bold antialiased dark:bg-gray-500;
+  }
+
+  .bubble {
+    @apply inline-block break-all border-gray-200 bg-gray-100 p-4 dark:bg-gray-700;
+  }
+
+  .bubble.user {
+    @apply rounded-s-xl rounded-ee-xl;
+  }
+
+  .bubble.ai {
+    @apply rounded-e-xl rounded-es-xl;
+  }
+}
